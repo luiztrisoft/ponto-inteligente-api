@@ -5,6 +5,4 @@ jdk:
 #  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 #script:
 #  - mvn test
-install: true
-script:
-  - mvn install
+install: mvn clean verify -Dgpg.skip=true
