@@ -43,7 +43,7 @@ public class Lancamento implements Serializable {
         this.data = data;
     }
 
-    @Column(name = "descricao", nullable = false)
+    @Column(name = "descricao", nullable = true)
     public String getDescricao() {
         return descricao;
     }
@@ -52,7 +52,7 @@ public class Lancamento implements Serializable {
         this.descricao = descricao;
     }
 
-    @Column(name = "localizacao", nullable = false)
+    @Column(name = "localizacao", nullable = true)
     public String getLocalizacao() {
         return localizacao;
     }
@@ -99,12 +99,12 @@ public class Lancamento implements Serializable {
     }
 
     @PreUpdate
-    public void preUpdate(){
+    public void preUpdate() {
         dataAtualizacao = new Date();
     }
 
     @PrePersist
-    public void prePersist(){
+    public void prePersist() {
         final Date atual = new Date();
         dataCriacao = atual;
         dataAtualizacao = atual;

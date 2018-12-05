@@ -76,8 +76,14 @@ public class Empresa  implements Serializable{
         this.funcionarios = funcionarios;
     }
 
+
     @PreUpdate
-    public void preUpdate(){
+    public void preUpdate() {
+        dataAtualizacao = new Date();
+    }
+
+    @PrePersist
+    public void prePersist() {
         final Date atual = new Date();
         dataCriacao = atual;
         dataAtualizacao = atual;

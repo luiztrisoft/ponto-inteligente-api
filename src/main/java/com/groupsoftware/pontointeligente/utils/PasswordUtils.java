@@ -10,7 +10,6 @@ public class PasswordUtils {
     private static final Logger log = LoggerFactory.getLogger(PasswordUtils.class);
 
     public PasswordUtils(){
-
     }
 
     /**
