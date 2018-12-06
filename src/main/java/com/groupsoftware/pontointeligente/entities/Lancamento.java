@@ -61,7 +61,7 @@ public class Lancamento implements Serializable {
         this.localizacao = localizacao;
     }
 
-    @Column(name = "dataCricao", nullable = false)
+    @Column(name = "data_criacao", nullable = false)
     public Date getDataCriacao() {
         return dataCriacao;
     }

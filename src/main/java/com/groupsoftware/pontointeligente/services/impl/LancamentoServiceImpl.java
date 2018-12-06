@@ -1,11 +1,17 @@
 package com.groupsoftware.pontointeligente.services.impl;
 
 import com.groupsoftware.pontointeligente.entities.Funcionario;
+import com.groupsoftware.pontointeligente.entities.Lancamento;
 import com.groupsoftware.pontointeligente.repositories.FuncionarioRepository;
+import com.groupsoftware.pontointeligente.repositories.LancamentoRepository;
 import com.groupsoftware.pontointeligente.services.LancamentoService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -13,32 +19,30 @@ import java.util.Optional;
 @Service
 public class LancamentoServiceImpl implements LancamentoService {
 
-    private static final Logger log = LoggerFactory.getLogger(FuncionarioServiceImpl.class);
+    private static final Logger log = LoggerFactory.getLogger(LancamentoServiceImpl.class);
 
     @Autowired
-    private FuncionarioRepository funcionarioRepository;
+    private LancamentoRepository lancamentoRepository;
 
-    @Override
-    public Funcionario persistir(Funcionario funcionario) {
-        log.info("Persistindo funcionário: {}", funcionario);
-        return this.funcionarioRepository.save(funcionario);
+    public Page<Lancamento> buscarPorFuncionarioId(Long funcionarioId, PageRequest pageRequest) {
+        log.info("Buscando lançamentos para o funcionário ID {}", funcionarioId);
+        return this.lancamentoRepository.findByFuncionarioId(funcionarioId, pageRequest);
     }
 
-    @Override
-    public Optional<Funcionario> buscarPorCpf(String cpf) {
-        log.info("Buscando funcionário pelo CPF {}", cpf);
-        return Optional.ofNullable(this.funcionarioRepository.findByCpf(cpf));
+    @Cacheable("lancamentoPorId")
+    public Optional<Lancamento> buscarPorId(Long id) {
+        log.info("Buscando um lançamento pelo ID {}", id);
+        return Optional.ofNullable(this.lancamentoRepository.findOne(id));
     }
 
-    @Override
-    public Optional<Funcionario> buscarPorEmail(String email) {
-        log.info("Buscando funcionário pelo email {}", email);
-        return Optional.ofNullable(this.funcionarioRepository.findByEmail(email));
+    @CachePut("lancamentoPorId")
+    public Lancamento persistir(Lancamento lancamento) {
+        log.info("Persistindo o lançamento: {}", lancamento);
+        return this.lancamentoRepository.save(lancamento);
     }
 
-    @Override
-    public Optional<Funcionario> buscarPorId(Long id) {
-        log.info("Buscando funcionário pelo IDl {}", id);
-        return Optional.ofNullable(this.funcionarioRepository.findOne(id));
+    public void remover(Long id) {
+        log.info("Removendo o lançamento ID {}", id);
+        this.lancamentoRepository.delete(id);
     }
 }
