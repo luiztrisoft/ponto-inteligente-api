@@ -1,8 +1,6 @@
 package com.groupsoftware.pontointeligente.services.impl;
 
-import com.groupsoftware.pontointeligente.entities.Funcionario;
 import com.groupsoftware.pontointeligente.entities.Lancamento;
-import com.groupsoftware.pontointeligente.repositories.FuncionarioRepository;
 import com.groupsoftware.pontointeligente.repositories.LancamentoRepository;
 import com.groupsoftware.pontointeligente.services.LancamentoService;
 import org.slf4j.Logger;
