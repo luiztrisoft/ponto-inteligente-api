@@ -10,7 +10,9 @@ import java.util.Map;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import org.springframework.stereotype.Component;
 
+@Component
 public class JwtTokenUtil {
     static final String CLAIM_KEY_USERNAME = "sub";
     static final String CLAIM_KEY_ROLE = "role";

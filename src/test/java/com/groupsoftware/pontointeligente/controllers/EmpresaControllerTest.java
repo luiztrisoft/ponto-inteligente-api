@@ -53,7 +53,7 @@ public class EmpresaControllerTest {
 
     @Test
     @WithMockUser
-    public void tesBuscarEmpresaCnpjValido() throws Exception {
+    public void testBuscarEmpresaCnpjValido() throws Exception {
         BDDMockito.given(this.empresaService.buscarPorCnpj(Mockito.anyString()))
                 .willReturn(Optional.of(this.obterDadosEmpresa()));
 
