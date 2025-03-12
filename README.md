@@ -4,7 +4,6 @@ API RESTful de ponto inteligente com Spring e Java
 TESTE
 ========
 
-
 ### Relatório Técnico: Desafio de Desenvolvimento
 
 #### 1. **Simplicidade no Design da Solução**
@@ -70,17 +69,19 @@ O projeto foi desenvolvido com Java 23, mas sem uso de recursos tão modernos, d
 
 ```bash
 docker run --name db_cooperativa -e POSTGRES_PASSWORD=123456 -p 3333:5432 -v c:\docker\cwi:/var/lib/postgresql/data -d postgres
+```
 
-
+```
 User: postgres
 Pass: 123456
 Port: 3333
 Base: cooperativa
 ```
 
-As informações de conexão podem ser encontradas no application.yml na API.
+As informações de conexão também podem ser encontradas no application.yml na API.
 
-## Importante: É necessário criar a base (cooperativa) na mão antes de executar  a API.
+#### Importante: É necessário criar a base (cooperativa) na mão antes de executar  a API.
+
 
 Com a aplicação em execução, a documentação da API pode ser acessada em 
 
