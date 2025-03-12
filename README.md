@@ -4,7 +4,6 @@ API RESTful de ponto inteligente com Spring e Java
 TESTE
 ========
 
-
 ### Relatório Técnico: Projeto Cooperativa
 
 #### 1. **Simplicidade no Design da Solução**
@@ -115,6 +114,7 @@ Com a aplicação em execução, a documentação da API pode ser acessada em:
 ### Conclusão
 
 Acredito que o projeto atende aos requisitos propostos, com uma arquitetura bem estruturada, boas práticas de programação e testes automatizados. As escolhas tecnológicas, como Liquibase, Docker, MapStruct e Swagger, foram fundamentais para garantir a qualidade e a manutenibilidade do código. As melhorias de performance e a persistência de associados no banco de dados são diferenciais que agregam valor à solução.
+
 
 
 
