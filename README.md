@@ -72,20 +72,26 @@ docker run --name db_cooperativa -e POSTGRES_PASSWORD=123456 -p 3333:5432 -v c:\
 ```
 
 ```
+#### Informações de conexão (também podem ser encontradas no application.yml na API)
+
 User: postgres
 Pass: 123456
 Port: 3333
 Base: cooperativa
 ```
-
-As informações de conexão também podem ser encontradas no application.yml na API.
-
 #### Importante: É necessário criar a base (cooperativa) na mão antes de executar  a API.
 
 
 Com a aplicação em execução, a documentação da API pode ser acessada em 
 
 `http://localhost:8080/swagger-ui/index.html`.
+
+---
+
+### Conclusão
+
+Acredito que o projeto atende aos requisitos propostos, com uma arquitetura bem estruturada, boas práticas de programação e testes automatizados. As escolhas tecnológicas, como Liquibase, Docker, MapStruct e Swagger, foram fundamentais para garantir a qualidade e a manutenibilidade do código. As melhorias de performance e a persistência de associados no banco de dados são diferenciais que agregam valor à solução.
+
 
 ---
 
