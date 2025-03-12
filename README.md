@@ -67,7 +67,7 @@ Pela descrição das instruções, o foco estava no cadastro de pautas, abertura
 
 ### Execução do projeto
 
-#### Banco de dados 
+#### 1. Banco de dados 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)  ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
 
@@ -87,7 +87,7 @@ Base: cooperativa
 ##### Importante: É necessário criar a base (cooperativa) na mão antes de executar  a API.
 
 
-#### API 
+#### 2. API 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
 
 
@@ -96,7 +96,7 @@ O projeto foi desenvolvido com Java 23, mas sem uso de recursos tão modernos, d
 spring-boot:run
 ```
 
-#### MapStruct
+#### 3. MapStruct
 ![MapStruct](https://img.shields.io/badge/MapStruct-FF6F00?style=for-the-badge&logo=mapstruct&logoColor=white)
 
 ##### Executar o Maven Clean e depois o Maven Install para gerar as implementações do MapStruct
