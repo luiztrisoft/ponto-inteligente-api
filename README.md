@@ -3,7 +3,6 @@ API RESTful de ponto inteligente com Spring e Java
 
 TESTE
 ========
-
 ### Relatório Técnico: Desafio de Desenvolvimento
 
 #### 1. **Simplicidade no Design da Solução**
@@ -82,16 +81,16 @@ Base: cooperativa
 #### Importante: É necessário criar a base (cooperativa) na mão antes de executar  a API.
 
 
+### API
+
+Depois de baixar, descompactar e abrir a API com sua IDE de preferência, execute o projeto com Maven:
+```
+spring-boot:run
+```
+
 Com a aplicação em execução, a documentação da API pode ser acessada em 
 
 `http://localhost:8080/swagger-ui/index.html`.
-
----
-
-### Conclusão
-
-Acredito que o projeto atende aos requisitos propostos, com uma arquitetura bem estruturada, boas práticas de programação e testes automatizados. As escolhas tecnológicas, como Liquibase, Docker, MapStruct e Swagger, foram fundamentais para garantir a qualidade e a manutenibilidade do código. As melhorias de performance e a persistência de associados no banco de dados são diferenciais que agregam valor à solução.
-
 
 ---
 
