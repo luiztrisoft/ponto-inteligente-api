@@ -71,9 +71,9 @@ O projeto foi desenvolvido com Java 23, mas sem uso de recursos tão modernos, d
 docker run --name db_cooperativa -e POSTGRES_PASSWORD=123456 -p 3333:5432 -v c:\docker\cwi:/var/lib/postgresql/data -d postgres
 ```
 
-```
-#### Informações de conexão (também podem ser encontradas no application.yml na API)
 
+#### Informações de conexão (também podem ser encontradas no application.yml na API)
+```
 User: postgres
 Pass: 123456
 Port: 3333
