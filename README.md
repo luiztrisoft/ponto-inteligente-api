@@ -89,6 +89,7 @@ Base: cooperativa
 
 #### 2. API 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![Liquibase](https://img.shields.io/badge/Liquibase-2962FF?style=for-the-badge&logo=liquibase&logoColor=white)
 
 
 O projeto foi desenvolvido com Java 23, mas sem uso de recursos tão modernos, devendo ser compatível com versões anteriores. Também foi usado o Spring-boot na versão 3.4.3. Depois de baixar, descompactar e abrir o projeto com a IDE de sua preferência, execute o projeto com Maven:
