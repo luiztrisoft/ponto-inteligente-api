@@ -4,7 +4,7 @@ API RESTful de ponto inteligente com Spring e Java
 TESTE
 ========
 
-### Relatório Técnico: Projeto Cooperativa
+## Relatório Técnico: Projeto Cooperativa
 
 #### 1. **Simplicidade no Design da Solução**
 Optei por uma abordagem direta e eficiente, evitando over engineering. Utilizei ferramentas como **Liquibase** para gerenciar migrações de banco de dados, **Docker** para garantir um ambiente consistente e **Swagger** para documentar os endpoints da API de forma clara e acessível. Essas escolhas simplificaram o desenvolvimento e a manutenção do projeto.
