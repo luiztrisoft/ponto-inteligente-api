@@ -69,6 +69,7 @@ Pela descrição das instruções, o foco estava no cadastro de pautas, abertura
 #### Banco de dados 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)  ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
+
 O banco de dados escolhido para este projeto foi o PostgreSQL e está configurado em um container Docker, conforme detalhado abaixo:
 
 ```bash
@@ -87,6 +88,8 @@ Base: cooperativa
 
 #### API 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+
+
 O projeto foi desenvolvido com Java 23, mas sem uso de recursos tão modernos, devendo ser compatível com versões anteriores. Depois de baixar, descompactar e abriro projeto com sua IDE de preferência, execute o projeto com Maven:
 ```
 spring-boot:run
@@ -94,6 +97,7 @@ spring-boot:run
 
 #### Documentação e testes 
 ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)
+
 
 Com a aplicação em execução, a documentação da API pode ser acessada em:
 
