@@ -3,6 +3,9 @@ API RESTful de ponto inteligente com Spring e Java
 
 TESTE
 ========
+
+
+
 ### Relatório Técnico: Projeto Cooperativa
 
 #### 1. **Simplicidade no Design da Solução**
@@ -96,8 +99,8 @@ spring-boot:run
 #### MapStruct
 ![MapStruct](https://img.shields.io/badge/MapStruct-FF6F00?style=for-the-badge&logo=mapstruct&logoColor=white)
 
+##### Executar o Maven Clean e depois o Maven Install para gerar as implementações do MapStruct
 
-##### Importante: Executar o Maven Clean e depois o Maven Install para gerar as implementações do MapStruct
 
 #### Documentação e testes 
 ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)
@@ -112,6 +115,3 @@ Com a aplicação em execução, a documentação da API pode ser acessada em:
 ### Conclusão
 
 Acredito que o projeto atende aos requisitos propostos, com uma arquitetura bem estruturada, boas práticas de programação e testes automatizados. As escolhas tecnológicas, como Liquibase, Docker, MapStruct e Swagger, foram fundamentais para garantir a qualidade e a manutenibilidade do código. As melhorias de performance e a persistência de associados no banco de dados são diferenciais que agregam valor à solução.
-
-
-
