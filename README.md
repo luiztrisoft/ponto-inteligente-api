@@ -4,8 +4,7 @@ API RESTful de ponto inteligente com Spring e Java
 TESTE
 ========
 
-
-### Relatório Técnico: Desafio de Desenvolvimento
+### Relatório Técnico: Projeto Cooperativa
 
 #### 1. **Simplicidade no Design da Solução**
 Optei por uma abordagem direta e eficiente, evitando over engineering. Utilizei ferramentas como **Liquibase** para gerenciar migrações de banco de dados, **Docker** para garantir um ambiente consistente e **Swagger** para documentar os endpoints da API de forma clara e acessível. Essas escolhas simplificaram o desenvolvimento e a manutenção do projeto.
@@ -90,7 +89,7 @@ Base: cooperativa
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
 
 
-O projeto foi desenvolvido com Java 23, mas sem uso de recursos tão modernos, devendo ser compatível com versões anteriores. Depois de baixar, descompactar e abriro projeto com sua IDE de preferência, execute o projeto com Maven:
+O projeto foi desenvolvido com Java 23, mas sem uso de recursos tão modernos, devendo ser compatível com versões anteriores. Também foi usado o Spring-boot na versão 3.4.3. Depois de baixar, descompactar e abrir o projeto com a IDE de sua preferência, execute o projeto com Maven:
 ```
 spring-boot:run
 ```
@@ -108,4 +107,5 @@ Com a aplicação em execução, a documentação da API pode ser acessada em:
 ### Conclusão
 
 Acredito que o projeto atende aos requisitos propostos, com uma arquitetura bem estruturada, boas práticas de programação e testes automatizados. As escolhas tecnológicas, como Liquibase, Docker, MapStruct e Swagger, foram fundamentais para garantir a qualidade e a manutenibilidade do código. As melhorias de performance e a persistência de associados no banco de dados são diferenciais que agregam valor à solução.
+
 
