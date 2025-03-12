@@ -3,6 +3,8 @@ API RESTful de ponto inteligente com Spring e Java
 
 TESTE
 ========
+
+
 ### Relatório Técnico: Desafio de Desenvolvimento
 
 #### 1. **Simplicidade no Design da Solução**
@@ -64,31 +66,33 @@ Pela descrição das instruções, o foco estava no cadastro de pautas, abertura
 
 ### Execução do projeto
 
-O projeto foi desenvolvido com Java 23, mas sem uso de recursos tão modernos, devendo ser compatível com versões anteriores. O banco de dados (PostgreSQL) está configurado em um container Docker, conforme detalhado abaixo:
+#### Banco de dados
+
+O banco de dados escolhido para este projeto foi o PostgreSQL e está configurado em um container Docker, conforme detalhado abaixo:
 
 ```bash
 docker run --name db_cooperativa -e POSTGRES_PASSWORD=123456 -p 3333:5432 -v c:\docker\cwi:/var/lib/postgresql/data -d postgres
 ```
 
-
-#### Informações de conexão (também podem ser encontradas no application.yml na API)
+Informações de conexão (também podem ser encontradas no application.yml na API)
 ```
 User: postgres
 Pass: 123456
 Port: 3333
 Base: cooperativa
 ```
-#### Importante: É necessário criar a base (cooperativa) na mão antes de executar  a API.
+##### Importante: É necessário criar a base (cooperativa) na mão antes de executar  a API.
 
 
-### API
-
-Depois de baixar, descompactar e abrir a API com sua IDE de preferência, execute o projeto com Maven:
+#### API
+O projeto foi desenvolvido com Java 23, mas sem uso de recursos tão modernos, devendo ser compatível com versões anteriores. Depois de baixar, descompactar e abriro projeto com sua IDE de preferência, execute o projeto com Maven:
 ```
 spring-boot:run
 ```
 
-Com a aplicação em execução, a documentação da API pode ser acessada em 
+#### Documentação e testes
+
+Com a aplicação em execução, a documentação da API pode ser acessada em:
 
 `http://localhost:8080/swagger-ui/index.html`.
 
@@ -97,3 +101,4 @@ Com a aplicação em execução, a documentação da API pode ser acessada em
 ### Conclusão
 
 Acredito que o projeto atende aos requisitos propostos, com uma arquitetura bem estruturada, boas práticas de programação e testes automatizados. As escolhas tecnológicas, como Liquibase, Docker, MapStruct e Swagger, foram fundamentais para garantir a qualidade e a manutenibilidade do código. As melhorias de performance e a persistência de associados no banco de dados são diferenciais que agregam valor à solução.
+
